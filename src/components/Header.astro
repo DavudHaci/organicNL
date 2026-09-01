@@ -1,0 +1,26 @@
+---
+const current = Astro.url.pathname;
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/gidsen/', label: 'Gidsen' },
+  { href: '/gidsen/legale-online-casinos-nederland/', label: 'Legale casino\u2019s' },
+  { href: '/verantwoord-spelen/', label: 'Verantwoord spelen' },
+  { href: '/over-ons/', label: 'Over ons' },
+];
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="/" class="logo">Casino<span>Helder</span>.nl</a>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      {
+        links.map((l) => (
+          <a href={l.href} aria-current={current === l.href ? 'page' : undefined}>
+            {l.label}
+          </a>
+        ))
+      }
+    </nav>
+    <span class="age-badge" title="Alleen voor volwassenen van 24 jaar en ouder">24+</span>
+  </div>
+</header>

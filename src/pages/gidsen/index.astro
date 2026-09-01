@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const gidsen = (await getCollection('gidsen')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const categories = [...new Set(gidsen.map((g) => g.data.category))];
+---
+
+<Base
+  title="Casino Gidsen & Uitleg – Alles over Legaal Online Spelen | CasinoHelder"
+  description="Praktische gidsen over iDEAL-casino's, snelle uitbetalingen, Cruks, RTP en bonusvoorwaarden. Onafhankelijk en up-to-date. 24+."
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Casino gidsen &amp; uitleg</h1>
+      <p>
+        Onafhankelijke, praktische gidsen over legaal online spelen in Nederland &mdash; van
+        betaalmethoden tot bonusvoorwaarden.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {
+        categories.map((cat) => (
+          <>
+            <h2>{cat}</h2>
+            <div class="grid-3">
+              {gidsen
+                .filter((g) => g.data.category === cat)
+                .map((g) => (
+                  <a class="article-card" href={`/gidsen/${g.id}/`}>
+                    <span class="article-card__cat">{g.data.category}</span>
+                    <h3>{g.data.title}</h3>
+                    <p>{g.data.description}</p>
+                    <span class="article-card__more">Lees verder &rarr;</span>
+                  </a>
+                ))}
+            </div>
+          </>
+        ))
+      }
+    </div>
+  </section>
+</Base>
