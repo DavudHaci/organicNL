@@ -43,6 +43,24 @@
 | uitbetaling-duurt-lang | Uitbetaling Casino Duurt Lang? Dit Kun Je Doen | Wacht je op je casino-uitbetaling? Dit zijn de 6 meest voorkomende oorzaken en wat je stap voor stap kunt doen. Praktische gids. |
 | legale-casinos | Legale Online Casino's Nederland – KSA Lijst 2026 | Volledige lijst van legale online casino's met Nederlandse KSA-vergunning. Zo herken je een legaal casino + waar je op moet letten. 24+. |
 
+## 3b. Brend keyword-ları (partnyor deal-ları — FTD mühərriki)
+
+Sentyabr 2026 əlavəsi: partnyor brendlər üçün review səhifələri. Bu keyword-larda
+rəqabət sıfıra yaxındır (yeni brendlər), axtaran şəxs isə artıq depozit niyyətlidir —
+ən yüksək konversiyalı organik trafik mənbəyi.
+
+| Keyword (NL) | Rəqabət | Niyyət | Səhifə |
+|---|---|---|---|
+| spinfin casino review / spinfin bonus | Sıfıra yaxın | Depozit (FTD) | /reviews/spinfin/ |
+| x3bet review / x3bet casino | Sıfıra yaxın | Depozit (FTD) | /reviews/x3bet/ |
+| atefia casino review / atefia betrouwbaar | Sıfıra yaxın | Depozit (FTD) | /reviews/atefia/ |
+| nieuwe online casino's 2026 | Aşağı-orta | Kommersiya | /gidsen/nieuwe-online-casinos/ |
+
+Qeyd: brend axtarış həcmi operatorun öz reklam fəaliyyəti ilə düz mütənasib artır —
+operator PPC/sosial kampaniya apardıqca "brend + review" sorğuları çoxalır və bu
+trafik affiliate-ə axır. Yeni partnyor brend əlavə olunanda eyni şablonla
+`src/content/reviews/` qovluğuna yeni .md faylı əlavə etmək kifayətdir.
+
 ## 4. Kontent strategiyası (növbəti addımlar)
 
 1. **Ay 1–2:** mövcud 8 məqalə + ana səhifə indekslənsin (Google Search Console qeydiyyatı, sitemap təqdim et).

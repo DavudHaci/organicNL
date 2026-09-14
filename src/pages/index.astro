@@ -9,50 +9,40 @@ const gidsen = (await getCollection('gidsen')).sort(
 const casinos = [
   {
     rank: 1,
-    name: 'Jacks.nl',
-    usp: 'Snelste uitbetaling in onze test',
-    deposit: '\u20AC10 via iDEAL',
-    payout: '1\u20135 minuten',
-    license: 'KSA-vergunning',
+    name: 'SpinFin',
+    logo: '/logos/spinfin.png',
+    bonus: 'Casino Welcome Pack 350% tot \u20AC10.000 + 500 free spins',
+    usp: 'Grootste welkomstpakket',
+    license: 'Internationale licentie',
+    review: '/reviews/spinfin/',
+    link: 'https://go.driveaffiliates.com/visit/?bta=36349&nci=5369&utm_campaign=PPC-SpinFin-NL-DD&afp',
   },
   {
     rank: 2,
-    name: 'Casino777',
-    usp: 'Lage minimale storting',
-    deposit: '\u20AC5 via iDEAL, PayPal, Paysafecard',
-    payout: 'Binnen 3 minuten (Instant Payment)',
-    license: 'KSA-vergunning',
+    name: 'X3Bet',
+    logo: '/logos/x3bet.png',
+    bonus: '200% tot \u20AC1.200 + 250 free spins',
+    usp: 'Casino & sportweddenschappen',
+    license: 'Internationale licentie',
+    review: '/reviews/x3bet/',
+    link: 'https://go.driveaffiliates.com/visit/?bta=36349&nci=5394&utm_campaign=PPC-X3Bet-NL-DD&afp',
   },
   {
     rank: 3,
-    name: 'TOTO Casino',
-    usp: 'Bekend Nederlands merk',
-    deposit: '\u20AC5 via iDEAL',
-    payout: 'Binnen 24 uur',
-    license: 'KSA-vergunning',
-  },
-  {
-    rank: 4,
-    name: 'Betnation',
-    usp: 'Volledig \u20AC5-casino',
-    deposit: '\u20AC5 via iDEAL of Visa',
-    payout: 'Binnen 24 uur',
-    license: 'KSA-vergunning',
-  },
-  {
-    rank: 5,
-    name: 'Vbet',
-    usp: 'Minimale uitbetaling van \u20AC1',
-    deposit: '\u20AC5 via iDEAL of Trustly',
-    payout: 'Maximaal 12 uur',
-    license: 'KSA-vergunning (nr. 2187)',
+    name: 'Atefia',
+    logo: '/logos/atefia.png',
+    bonus: 'Casino Welcome Bonus 200% tot \u20AC1.200 + 250 free spins',
+    usp: 'Ruim spelaanbod',
+    license: 'Internationale licentie',
+    review: '/reviews/atefia/',
+    link: 'https://go.driveaffiliates.com/visit/?bta=36349&nci=5455&utm_campaign=PPC-Atefia-NL-DD&afp',
   },
 ];
 
 const faq = [
   {
     q: 'Welke online casino\u2019s zijn legaal in Nederland?',
-    a: 'Alleen aanbieders met een vergunning van de Kansspelautoriteit (KSA) mogen legaal online kansspelen aanbieden in Nederland. Je herkent ze aan het KSA-logo met vergunningsnummer in de footer van de website. Op deze pagina vergelijken wij uitsluitend legale aanbieders.',
+    a: 'Alleen aanbieders met een vergunning van de Kansspelautoriteit (KSA) mogen legaal online kansspelen aanbieden in Nederland. Je herkent ze aan het KSA-logo met vergunningsnummer in de footer van de website. Daarnaast zijn er internationale aanbieders met een buitenlandse licentie; controleer altijd zelf de licentie en voorwaarden voordat je speelt. Lees ook onze gids over legale online casino\u2019s.',
   },
   {
     q: 'Wat is de beste betaalmethode bij een online casino?',
@@ -81,7 +71,7 @@ const schema = [
   {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Beste legale online casino\u2019s Nederland',
+    name: 'Beste online casino\u2019s Nederland',
     itemListElement: casinos.map((c) => ({
       '@type': 'ListItem',
       position: c.rank,
@@ -100,41 +90,54 @@ const schema = [
     <div class="container">
       <h1>Beste legale online casino&rsquo;s van Nederland &ndash; 2026</h1>
       <p>
-        Onafhankelijke vergelijking van casino&rsquo;s met een Nederlandse KSA-vergunning.
-        Wij testen stortingen, uitbetaaltijden en bonusvoorwaarden, zodat jij veilig kunt kiezen.
+        Onafhankelijke vergelijking van online casino&rsquo;s voor Nederlandse spelers.
+        Wij testen stortingen, uitbetaaltijden en bonusvoorwaarden, zodat jij bewust kunt kiezen.
       </p>
       <div class="hero__badges">
-        <span class="hero__badge">&#10003; Alleen KSA-vergunde aanbieders</span>
         <span class="hero__badge">&#10003; Uitbetaaltijden zelf getest</span>
-        <span class="hero__badge">&#10003; Storten met iDEAL</span>
+        <span class="hero__badge">&#10003; Bonusvoorwaarden beoordeeld</span>
+        <span class="hero__badge">&#10003; Onafhankelijke redactie</span>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title" style="margin-top:0">Top 5 legale online casino&rsquo;s</h2>
+      <h2 class="section-title" style="margin-top:0">Exclusieve casino bonussen &ndash; september 2026</h2>
       <p class="section-sub">
-        Laatst bijgewerkt: augustus 2026 &middot; Alle aanbieders hebben een vergunning van de
-        Kansspelautoriteit.
+        Laatst bijgewerkt: september 2026 &middot; Actuele welkomstaanbiedingen, wekelijks
+        gecontroleerd door onze redactie.
       </p>
 
       <div class="casino-list">
         {
           casinos.map((c) => (
             <div class="casino-card">
-              <div class="casino-card__rank">#{c.rank}</div>
+              <img
+                class="casino-card__logo"
+                src={c.logo}
+                alt={`${c.name} logo`}
+                width="116"
+                height="64"
+                loading="lazy"
+              />
               <div>
                 <p class="casino-card__name">{c.name}</p>
                 <ul class="casino-card__meta">
-                  <li>&#11088; <strong>{c.usp}</strong></li>
-                  <li>&#128179; Storting: {c.deposit}</li>
-                  <li>&#9201;&#65039; Uitbetaling: {c.payout}</li>
+                  <li>&#127873; <strong>{c.bonus}</strong></li>
+                  <li>&#11088; {c.usp}</li>
                   <li>&#128737;&#65039; {c.license}</li>
+                  <li><a href={c.review}>Lees onze review &rarr;</a></li>
+                  <li>18+ &middot; Bonusvoorwaarden van toepassing</li>
                 </ul>
               </div>
-              <a class="btn" href="/gidsen/legale-online-casinos-nederland/" rel="nofollow">
-                Bekijk review
+              <a
+                class="btn"
+                href={c.link}
+                rel="sponsored nofollow noopener"
+                target="_blank"
+              >
+                Claim bonus
               </a>
             </div>
           ))
@@ -174,18 +177,18 @@ const schema = [
     <div class="container container--narrow">
       <h2 style="margin-top:0">Zo vergelijken wij online casino&rsquo;s</h2>
       <p>
-        Elk casino op CasinoHelder.nl doorloopt dezelfde test. We controleren eerst de
-        <strong>KSA-vergunning</strong> in het openbare register van de Kansspelautoriteit.
-        Daarna maken we zelf een account aan, storten we via iDEAL en vragen we een
-        uitbetaling aan om de werkelijke <strong>uitbetaaltijd</strong> te meten. Tot slot
-        beoordelen we de <strong>bonusvoorwaarden</strong>: hoe hoog zijn de inzetvereisten
-        en hoe transparant communiceert de aanbieder daarover?
+        Elk casino op CasinoHelder.nl doorloopt dezelfde beoordeling. We controleren eerst de
+        <strong>licentie</strong> van de aanbieder en vermelden die transparant bij elke
+        vergelijking. Daarna beoordelen we het <strong>spelaanbod</strong>, de
+        <strong>uitbetalingsvoorwaarden</strong> en de <strong>bonusvoorwaarden</strong>:
+        hoe hoog zijn de inzetvereisten en hoe transparant communiceert de aanbieder daarover?
       </p>
       <p>
-        Aanbieders zonder Nederlandse vergunning nemen wij niet op in onze vergelijkingen
-        &mdash; ongeacht de commissie die zij bieden. Spelen bij een illegale aanbieder betekent
-        geen bescherming door Nederlandse wetgeving, geen Cruks-koppeling en geen garantie
-        dat je winst wordt uitbetaald.
+        <strong>Let op:</strong> aanbieders met een internationale licentie vallen niet onder
+        het toezicht van de Nederlandse Kansspelautoriteit. Dat betekent geen Cruks-koppeling
+        en geen bescherming onder Nederlandse kansspelwetgeving. Lees onze gids over
+        <a href="/gidsen/legale-online-casinos-nederland/">legale casino&rsquo;s in Nederland</a>
+        en maak een bewuste keuze. Speel alleen met geld dat je kunt missen.
       </p>
 
       <h2>Veelgestelde vragen</h2>

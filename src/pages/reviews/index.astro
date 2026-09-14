@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const reviews = (await getCollection('reviews')).sort(
+  (a, b) => b.data.rating - a.data.rating
+);
+---
+
+<Base
+  title="Online Casino Reviews 2026 – Eerlijk Getest | CasinoHelder"
+  description="Onafhankelijke reviews van online casino's: bonussen, spelaanbod en uitbetalingen eerlijk beoordeeld door onze redactie. 24+."
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Online casino reviews</h1>
+      <p>
+        Eerlijke, onafhankelijke beoordelingen van online casino&rsquo;s voor Nederlandse
+        spelers &mdash; inclusief bonusvoorwaarden, spelaanbod en uitbetalingen.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="casino-list">
+        {
+          reviews.map((r) => (
+            <div class="casino-card">
+              <img
+                class="casino-card__logo"
+                src={r.data.logo}
+                alt={`${r.data.brand} logo`}
+                width="116"
+                height="64"
+                loading="lazy"
+              />
+              <div>
+                <p class="casino-card__name">{r.data.brand}</p>
+                <ul class="casino-card__meta">
+                  <li>&#127873; <strong>{r.data.bonus}</strong></li>
+                  <li>&#11088; Score: {r.data.rating}/10</li>
+                  <li>18+ &middot; Bonusvoorwaarden van toepassing</li>
+                </ul>
+              </div>
+              <a class="btn btn--ghost" href={`/reviews/${r.id}/`}>Lees review</a>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="rg-banner">
+        <strong>Gokken kan verslavend zijn. Speel bewust. 24+</strong> &mdash; Hulp nodig?
+        Kijk op <a href="/verantwoord-spelen/">onze pagina over verantwoord spelen</a>.
+      </div>
+    </div>
+  </section>
+</Base>
