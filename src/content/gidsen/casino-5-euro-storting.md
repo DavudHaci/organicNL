@@ -18,18 +18,6 @@ faq:
 
 Je hoeft geen groot budget te hebben om legaal online te spelen. Steeds meer Nederlandse casino's accepteren stortingen vanaf **5 euro via iDEAL** — ideaal voor beginnende spelers of wie bewust met een klein budget speelt. In dit overzicht zie je precies waar dat kan en waar je op moet letten.
 
-## Legale casino's met €5 minimale storting
-
-| Casino | Min. storting | Betaalmethoden | Bonus bij €5? |
-|---|---|---|---|
-| Casino777 | €5 | iDEAL, PayPal, Paysafecard, Visa/MC | Nee (min. €10) |
-| TOTO Casino | €5 | Alleen iDEAL | Nee (min. €20) |
-| Betnation | €5 | iDEAL, Visa | Nee (hogere storting vereist) |
-| ComeOn | €5 | iDEAL, Sofort, Visa/MC | Nee (min. €10) |
-| Vbet | €5 | iDEAL, Trustly | Nee (aparte actie) |
-
-De meeste andere legale aanbieders, zoals Jacks.nl en Unibet, hanteren een minimale storting van €10. Bekijk het volledige aanbod in onze lijst van [legale online casino's in Nederland](/gidsen/legale-online-casinos-nederland/).
-
 ## Liever starten met een bonus? Deze aanbiedingen vallen op
 
 Speel je met een klein budget, dan kan een hoge welkomstbonus je speeltegoed flink verlengen. Deze internationale aanbieders bieden momenteel de opvallendste bonussen — controleer vóór het storten altijd de minimale storting en de bonusvoorwaarden in de kassa:
@@ -74,6 +62,18 @@ Speel je met een klein budget, dan kan een hoge welkomstbonus je speeltegoed fli
 </div>
 
 Deze aanbieders vallen onder een internationale licentie en niet onder het Nederlandse vergunningsstelsel — lees onze reviews voor de details per casino.
+
+## Legale casino's met €5 minimale storting
+
+| Casino | Min. storting | Betaalmethoden | Bonus bij €5? |
+|---|---|---|---|
+| Casino777 | €5 | iDEAL, PayPal, Paysafecard, Visa/MC | Nee (min. €10) |
+| TOTO Casino | €5 | Alleen iDEAL | Nee (min. €20) |
+| Betnation | €5 | iDEAL, Visa | Nee (hogere storting vereist) |
+| ComeOn | €5 | iDEAL, Sofort, Visa/MC | Nee (min. €10) |
+| Vbet | €5 | iDEAL, Trustly | Nee (aparte actie) |
+
+De meeste andere legale aanbieders, zoals Jacks.nl en Unibet, hanteren een minimale storting van €10. Bekijk het volledige aanbod in onze lijst van [legale online casino's in Nederland](/gidsen/legale-online-casinos-nederland/).
 
 ## Waarom een lage storting slim kan zijn
 
